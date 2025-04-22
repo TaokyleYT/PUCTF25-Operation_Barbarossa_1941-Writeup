@@ -369,3 +369,9 @@ Finally, we can assemble the informations into the flag, which is
 
 Q - Why we only have 9 plugboards? not 11 meh?\
 A - In the plugboards, `CC` and `DD` means exchange position of C with C, and D with D. That does nothing, so those 2 isn't counted as a plugboard.
+
+Q - Why are some characters still incorrect in plaintext?
+A - This may be caused by the rotor double-stepping mechanism.\
+The ring setting “AAA”, the key setting “JWD”, is not exactly the same as the ring setting ‘BJZ’, the key setting “KFC”. (The original enigma configuration used to cipher)\
+But what can be found is that each wrong character is separated by 25 characters, counting the wrong character itself, which is the step position of the middle rotor after the fast rotor has made one full rotation.
+The real configuration would be unknown to us unless we brute it 26^6 times, or get the daily key + encryption key table from the germans (lol)
