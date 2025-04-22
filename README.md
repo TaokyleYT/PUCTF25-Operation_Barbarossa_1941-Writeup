@@ -92,8 +92,6 @@ Good news is, the internet already did that for you.
 
 We will use cyberchef's multiple bombe (Stored at `CyberChef/CyberChef.html`)
 
-Tools related to enigma had already been bookmarked in `favourite` for you.
-
 ### Set up the bombe
 
 We can get some information we need from [here](https://www.ciphermachinesandcryptology.com/en/enigmatech.htm), or just mess around in CyberChef
@@ -185,9 +183,11 @@ Sorry for the confusing link
 
 Let's input the rotors, reflector, initial rotor position, and part of the plugboard back into the Enigma in [Cyber](CyberChef/CyberChef.html#recipe=Enigma('3-rotor','LEYJVCNIXWPBQMDRTAKZGFUHOS','A','A','ESOVPZJAYQUIRHXLNFTGKDCMWB%3CK','A','J','EKMFLGDQVZNTOWYHXUSPAIBRCJ%3CR','A','W','VZBRGITYUPSDNHLXAWMJQOFECK%3CA','A','D','AY%20BR%20CU%20DH%20EQ%20FS%20GL%20IP%20JX%20KN%20MO%20TZ%20VW','LR%20AN%20EZ%20HK%20IJ%20MQ%20OT%20SW%20UX',true)&input=VVNPS1cgUlJIQ0QgTlpUVVIgU1hQWlIgUENYRFogSkRIRkkgR1lCRkQgQklOWEIgTVJTRkUgR0hBSlcgT0tNREwgTlhDTlEgQUpLWVcgWklHTEwgUUpERlYgQkVSQUEgVlRWRkwgSEZNWFcgR1FYTlUgTVFSTEogV0RCWkwgUk1LRFYgV0FCR0IgWlpVSUEgT1ZZU0cgQkFYSEYgTkpMTlYgTUJPVU4gWU1DWlIgWkpVU1UgUExTS1cgSg)[Chef](https://gchq.github.io/CyberChef/#recipe=Enigma('3-rotor','LEYJVCNIXWPBQMDRTAKZGFUHOS','A','A','ESOVPZJAYQUIRHXLNFTGKDCMWB%3CK','A','J','EKMFLGDQVZNTOWYHXUSPAIBRCJ%3CR','A','W','VZBRGITYUPSDNHLXAWMJQOFECK%3CA','A','D','AY%20BR%20CU%20DH%20EQ%20FS%20GL%20IP%20JX%20KN%20MO%20TZ%20VW','LR%20AN%20EZ%20HK%20IJ%20MQ%20OT%20SW%20UX',true)&input=VVNPS1cgUlJIQ0QgTlpUVVIgU1hQWlIgUENYRFogSkRIRkkgR1lCRkQgQklOWEIgTVJTRkUgR0hBSlcgT0tNREwgTlhDTlEgQUpLWVcgWklHTEwgUUpERlYgQkVSQUEgVlRWRkwgSEZNWFcgR1FYTlUgTVFSTEogV0RCWkwgUk1LRFYgV0FCR0IgWlpVSUEgT1ZZU0cgQkFYSEYgTkpMTlYgTUJPVU4gWU1DWlIgWkpVU1UgUExTS1cgSg)
 
-we get `RECON XUNIT XFROM XKKRT UNPWA XKURT INOWA XNORT HWEST XSEFE ZXSEB EZXAI RROUT EXDIR ECTIA NXDUB HOAKI XDUBR OWKIX OVOTS JHKAX OVOTT CHKAX ATXON EXIGH TUHRE EFIPI XINFR EGTXS TARTX XTLAC K`
+we get\
+`RECON XUNIT XFROM XKKRT UNPWA XKURT INOWA XNORT HWEST XSEFE ZXSEB EZXAI RROUT EXDIR ECTIA NXDUB HOAKI XDUBR OWKIX OVOTS JHKAX OVOTT CHKAX ATXON EXIGH TUHRE EFIPI XINFR EGTXS TARTX XTLAC K`
 
-After removing spaces and change X into spaces, we have `RECON UNIT FROM KKRTUNPWA KURTINOWA NORTHWEST SEFEZ SEBEZ AIRROUTE DIRECTIAN DUBHOAKI DUBROWKI OVOTSJHKA OVOTTCHKA AT ONE IGHTUHREEFIPI INFREGT START  TLACK`
+After removing spaces and change X into spaces, we have\
+`RECON UNIT FROM KKRTUNPWA KURTINOWA NORTHWEST SEFEZ SEBEZ AIRROUTE DIRECTIAN DUBHOAKI DUBROWKI OVOTSJHKA OVOTTCHKA AT ONE IGHTUHREEFIPI INFREGT START  TLACK`
 
 Some wordings doesn't make sense, and we have only 9 plugboards. Since Germans only use 10 plugboards, we need to find the last one.
 
@@ -373,5 +373,26 @@ A - In the plugboards, `CC` and `DD` means exchange position of C with C, and D 
 Q - Why are some characters still incorrect in plaintext?
 A - This may be caused by the rotor double-stepping mechanism.\
 The ring setting “AAA”, the key setting “JWD”, is not exactly the same as the ring setting ‘BJZ’, the key setting “KFC”. (The original enigma configuration used to cipher)\
-But what can be found is that each wrong character is separated by 25 characters, counting the wrong character itself, which is the step position of the middle rotor after the fast rotor has made one full rotation.
+But what can be found is that each wrong character is separated by 25 characters, counting the wrong character itself, which is the step position of the middle rotor after the fast rotor has made one full rotation.\
 The real configuration would be unknown to us unless we brute it 26^6 times, or get the daily key + encryption key table from the germans (lol)
+
+Q - Then what was the original message and configurations?\
+A - Look at this [Cyber](CyberChef/CyberChef.html#recipe=Enigma('3-rotor','LEYJVCNIXWPBQMDRTAKZGFUHOS','A','A','ESOVPZJAYQUIRHXLNFTGKDCMWB%3CK','B','K','EKMFLGDQVZNTOWYHXUSPAIBRCJ%3CR','J','F','VZBRGITYUPSDNHLXAWMJQOFECK%3CA','Z','C','AY%20BR%20CU%20DH%20EQ%20FS%20GL%20IP%20JX%20KN%20MO%20TZ%20VW','LR%20AN%20EZ%20HK%20IJ%20MQ%20OT%20SW%20UX%20PV',true)&input=VVNPS1cgUlJIQ0QgTlpUVVIgU1hQWlIgUENYRFogSkRIRkkgR1lCRkQgQklOWEIgTVJTRkUgR0hBSlcgT0tNREwgTlhDTlEgQUpLWVcgWklHTEwgUUpERlYgQkVSQUEgVlRWRkwgSEZNWFcgR1FYTlUgTVFSTEogV0RCWkwgUk1LRFYgV0FCR0IgWlpVSUEgT1ZZU0cgQkFYSEYgTkpMTlYgTUJPVU4gWU1DWlIgWkpVU1UgUExTS1cgSg)[Chef](https://gchq.github.io/CyberChef/#recipe=Enigma('3-rotor','LEYJVCNIXWPBQMDRTAKZGFUHOS','A','A','ESOVPZJAYQUIRHXLNFTGKDCMWB%3CK','B','K','EKMFLGDQVZNTOWYHXUSPAIBRCJ%3CR','J','F','VZBRGITYUPSDNHLXAWMJQOFECK%3CA','Z','C','AY%20BR%20CU%20DH%20EQ%20FS%20GL%20IP%20JX%20KN%20MO%20TZ%20VW','LR%20AN%20EZ%20HK%20IJ%20MQ%20OT%20SW%20UX%20PV',true)&input=VVNPS1cgUlJIQ0QgTlpUVVIgU1hQWlIgUENYRFogSkRIRkkgR1lCRkQgQklOWEIgTVJTRkUgR0hBSlcgT0tNREwgTlhDTlEgQUpLWVcgWklHTEwgUUpERlYgQkVSQUEgVlRWRkwgSEZNWFcgR1FYTlUgTVFSTEogV0RCWkwgUk1LRFYgV0FCR0IgWlpVSUEgT1ZZU0cgQkFYSEYgTkpMTlYgTUJPVU4gWU1DWlIgWkpVU1UgUExTS1cgSg) link for the Enigma machine with correct configuration.\
+Enigma rotor count: 3-rotor\
+Left-Hand Rotor: ESOVPZJAYQUIRHXLNFTGKDCMWB<K (Rotor IV)\
+Left-Hand Rotor Ring setting: B\
+Left-Hand Rotor Initial value: K\
+Middle Rotor: EKMFLGDQVZNTOWYHXUSPAIBRCJ<R (Rotor I)\
+Middle Rotor Ring setting: J\
+Middle Rotor Initial value: F\
+Right-Hand Rotor: VZBRGITYUPSDNHLXAWMJQOFECK<A (Rotor V)\
+Right-Hand Rotor Ring setting: Z\
+Right-Hand Rotor Initial value: C\
+Reflector: AY BR CU DH EQ FS GL IP JX KN MO TZ VW (reflector B)\
+Plugboard LR AN EZ HK IJ MQ OT SW UX PV
+
+Actual unencrypted message:\
+`RECON XUNIT XFROM XKURT INOWA XKURT INOWA XNORT HWEST XSEBE ZXSEB EZXAI RROUT EXDIR ECTIO NXDUB ROWKI XDUBR OWKIX OPOTS CHKAX OPOTS CHKAX ATXON EEIGH TTHRE EFIVE XINFR EGTXS TARTX ATTAC K`
+
+Actual message:\
+`RECON UNIT FROM KURTINOWA KURTINOWA NORTHWEST SEBEZ SEBEZ AIRROUTE DIRECTION DUBROWKI DUBROWKI OPOTSCHKA OPOTSCHKA AT ONEEIGHTTHREEFIVE INFREGT START ATTACK`
