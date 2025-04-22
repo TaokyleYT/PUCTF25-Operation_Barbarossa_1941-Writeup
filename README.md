@@ -378,18 +378,18 @@ The real configuration would be unknown to us unless we brute it 26^6 times, or 
 
 Q - Then what was the original message and configurations?\
 A - Look at this [Cyber](CyberChef/CyberChef.html#recipe=Enigma('3-rotor','LEYJVCNIXWPBQMDRTAKZGFUHOS','A','A','ESOVPZJAYQUIRHXLNFTGKDCMWB%3CK','B','K','EKMFLGDQVZNTOWYHXUSPAIBRCJ%3CR','J','F','VZBRGITYUPSDNHLXAWMJQOFECK%3CA','Z','C','AY%20BR%20CU%20DH%20EQ%20FS%20GL%20IP%20JX%20KN%20MO%20TZ%20VW','LR%20AN%20EZ%20HK%20IJ%20MQ%20OT%20SW%20UX%20PV',true)&input=VVNPS1cgUlJIQ0QgTlpUVVIgU1hQWlIgUENYRFogSkRIRkkgR1lCRkQgQklOWEIgTVJTRkUgR0hBSlcgT0tNREwgTlhDTlEgQUpLWVcgWklHTEwgUUpERlYgQkVSQUEgVlRWRkwgSEZNWFcgR1FYTlUgTVFSTEogV0RCWkwgUk1LRFYgV0FCR0IgWlpVSUEgT1ZZU0cgQkFYSEYgTkpMTlYgTUJPVU4gWU1DWlIgWkpVU1UgUExTS1cgSg)[Chef](https://gchq.github.io/CyberChef/#recipe=Enigma('3-rotor','LEYJVCNIXWPBQMDRTAKZGFUHOS','A','A','ESOVPZJAYQUIRHXLNFTGKDCMWB%3CK','B','K','EKMFLGDQVZNTOWYHXUSPAIBRCJ%3CR','J','F','VZBRGITYUPSDNHLXAWMJQOFECK%3CA','Z','C','AY%20BR%20CU%20DH%20EQ%20FS%20GL%20IP%20JX%20KN%20MO%20TZ%20VW','LR%20AN%20EZ%20HK%20IJ%20MQ%20OT%20SW%20UX%20PV',true)&input=VVNPS1cgUlJIQ0QgTlpUVVIgU1hQWlIgUENYRFogSkRIRkkgR1lCRkQgQklOWEIgTVJTRkUgR0hBSlcgT0tNREwgTlhDTlEgQUpLWVcgWklHTEwgUUpERlYgQkVSQUEgVlRWRkwgSEZNWFcgR1FYTlUgTVFSTEogV0RCWkwgUk1LRFYgV0FCR0IgWlpVSUEgT1ZZU0cgQkFYSEYgTkpMTlYgTUJPVU4gWU1DWlIgWkpVU1UgUExTS1cgSg) link for the Enigma machine with correct configuration.\
-Enigma rotor count: 3-rotor\
-Left-Hand Rotor: ESOVPZJAYQUIRHXLNFTGKDCMWB<K (Rotor IV)\
-Left-Hand Rotor Ring setting: B\
-Left-Hand Rotor Initial value: K\
-Middle Rotor: EKMFLGDQVZNTOWYHXUSPAIBRCJ<R (Rotor I)\
-Middle Rotor Ring setting: J\
-Middle Rotor Initial value: F\
-Right-Hand Rotor: VZBRGITYUPSDNHLXAWMJQOFECK<A (Rotor V)\
-Right-Hand Rotor Ring setting: Z\
-Right-Hand Rotor Initial value: C\
-Reflector: AY BR CU DH EQ FS GL IP JX KN MO TZ VW (reflector B)\
-Plugboard LR AN EZ HK IJ MQ OT SW UX PV
+Enigma rotor count: `3-rotor`\
+Left-Hand Rotor: `ESOVPZJAYQUIRHXLNFTGKDCMWB<K` (Rotor IV)\
+Left-Hand Rotor Ring setting: `B`\
+Left-Hand Rotor Initial value: `K`\
+Middle Rotor: `EKMFLGDQVZNTOWYHXUSPAIBRCJ<R` (Rotor I)\
+Middle Rotor Ring setting: `J`\
+Middle Rotor Initial value: `F`\
+Right-Hand Rotor: `VZBRGITYUPSDNHLXAWMJQOFECK<A` (Rotor V)\
+Right-Hand Rotor Ring setting: `Z`\
+Right-Hand Rotor Initial value: `C`\
+Reflector: `AY BR CU DH EQ FS GL IP JX KN MO TZ VW` (reflector B)\
+Plugboard: `LR AN EZ HK IJ MQ OT SW UX PV`
 
 Actual unencrypted message:\
 `RECON XUNIT XFROM XKURT INOWA XKURT INOWA XNORT HWEST XSEBE ZXSEB EZXAI RROUT EXDIR ECTIO NXDUB ROWKI XDUBR OWKIX OPOTS CHKAX OPOTS CHKAX ATXON EEIGH TTHRE EFIVE XINFR EGTXS TARTX ATTAC K`
